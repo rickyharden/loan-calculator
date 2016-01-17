@@ -1,0 +1,65 @@
+.jumbotron {
+  background-image: url('../images/dude-landscape2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 700px) {
+  .jumbotron {
+    height: 400px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-main {
+  background-color: #d32155;
+  color: #ffffff;
+}
+
+.btn-main:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+}
+
+#header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#loan-title {
+  margin-top: 10px;
+}
+
+.loan-border {
+  box-shadow: 1px 1px 3px 2px #D3D3D3;
+  -webkit-box-shadow: 1px 1px 3px 2px #D3D3D3;
+  -moz-box-shadow:1px 1px 3px 2px #D3D3D3;
+  margin-bottom: 10px;
+}
+
+#footer {
+  background: #222222;
+  padding: 20px 10px 10px 10px;
+  position: relative;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.social {
+  float: right;
+  font-size: 2em;
+}
+
+.social li {
+  margin-left: 10px;
+  display: inline;
+}
+
+.social li a {
+  color: #ffffff;
+}

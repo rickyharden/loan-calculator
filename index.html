@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <title>RH Loans - Loan Calculator</title>
+  <link rel="stylesheet"href="assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/carousel.css">
+  <link rel="stylesheet" href="assets/stylesheets/loan-calculator.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar-wrapper">
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">RH Loans</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <!-- /navbar -->
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Need a loan?</h1>
+      <p>Our loan calculator is designed to show you how much your personal loan is going to cost.</p>
+    </div>
+  </div>
+
+  <!-- Loan Calculator -->
+  <div class="container">
+    <div class="container loan-border col-lg-4 col-sm-12">
+      <h2 id="loan-title">Loan Calculator</h2>
+      <p>Use our loan repayment calculator to tell us what you want to borrow and how much you can afford monthly, and we'll show you an example of what you might repay.<br><br>
+      The actual loan amount and annual percentage rate (APR) we offer may differ as they will depend on our assessment of your personal circumstances and how good your credit score is.<br><br>
+      </p>
+    </div>
+    <div class="container col-lg-8 col-sm-12">
+      <form id="calculator" action="">
+        <label for="amount">Loan amount</label>
+        <div class="form-group input-group">
+          <span class="input-group-addon" id="basic-addon1">&pound;</span>
+          <input id="amount" type="text" class="form-control" placeholder="Amount I need to borrow" aria-describedby="basic-addon1" required>
+        </div>
+        <label for="amount">Payment each month</label>
+        <div class="form-group input-group">
+          <span class="input-group-addon" id="basic-addon2">&pound;</span>
+          <input id="payments" type="text" class="form-control" placeholder="Monthly repayments" aria-describedby="basic-addon2" required>
+        </div>
+        <div class="form-group">
+          <label for="interest">Annual interest amount</label>
+          <div class="input-group">
+            <input id="interest" class="form-control" type="number" placeholder="Agreed annual interest rate" aria-describedby="basic-addon2" required>
+            <span class="input-group-addon" id="basic-addon3">%</span>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-main" href="#results" type="submit">Calculate</button>
+      </form>
+
+      <table id="results" class="table table-hover hidden">
+        <thead>
+          <tr>
+            <th>Date taken (YY/MM)</th>
+            <th>Remaining balance (&pound;)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0 Years 1 Month</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <hr>
+      <p class="text-center">&copy; 2016 RH Loans<br>7 Southbourne, Ashford, Kent, TN23 5UB</p>
+      <hr>
+      <ul class="list-unstyled social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /Loan Calculator -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+  <script src="assets/javascript/bootstrap.min.js"></script>
+  <script src="assets/javascript/loan-calculator.js"></script>
+  <script src="assets/javascript/ie-emulation-modes-warning.js"></script>
+  <script src="assets/javascript/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
