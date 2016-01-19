@@ -6,6 +6,10 @@
   color: #ffffff;
 }
 
+.jumbotron h1 {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 700px) {
   .jumbotron {
     height: 400px;
@@ -16,19 +20,39 @@
   display: none;
 }
 
+.navbar .brand {
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 1px 0 #325D94;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../../assets/images/rh-logo.png');
+    width: 200px;
+    background-repeat: no-repeat;
+    height: 80px;
+    text-indent: -5000em;
+    z-index: 9999;
+    top: -14px;
+    left: 8px;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar .navbar-collapse .navbar-nav {
+      padding-left: 200px;
+  }
+}
+
 .btn-main {
-  background-color: #d32155;
+  background-color: #0020c1;
   color: #ffffff;
 }
 
 .btn-main:hover {
   color: #ffffff;
   text-shadow: 1px 1px 0 #000000;
-}
-
-#header {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 #loan-title {
