@@ -75,7 +75,7 @@
         <label for="amount">Payment each month</label>
         <div class="form-group input-group">
           <span class="input-group-addon" id="basic-addon2">&pound;</span>
-          <input id="payments" type="text" class="form-control" placeholder="Monthly repayments" aria-describedby="basic-addon2" required>
+          <input id="monthlyPayment" type="text" class="form-control" placeholder="Monthly repayments" aria-describedby="basic-addon2" required>
         </div>
         <div class="form-group">
           <label for="interest">Annual interest amount</label>
@@ -84,28 +84,22 @@
             <span class="input-group-addon" id="basic-addon3">%</span>
           </div>
         </div>
-        <button class="btn btn-lg btn-main" href="#results" type="submit">Calculate</button>
+        <button class="btn btn-lg btn-main" href="#results" type="submit" onclick="calculate();">Calculate</button>
       </form>
 
       <table id="results" class="table table-hover hidden">
         <thead>
           <tr>
-            <th>Date taken (YY/MM)</th>
-            <th>Remaining balance (&pound;)</th>
+            <th>Total (Loan + Interest)</th>
+            <th>Interest</th>
+            <th>Payment length</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>0 Years 1 Month</td>
-            <td>10,000</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
+            <td class="price"></td>
+            <td class="interest"></td>
+            <td class="time"></td>
           </tr>
         </tbody>
       </table>

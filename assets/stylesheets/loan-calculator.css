@@ -48,9 +48,10 @@
 .btn-main {
   background-color: #0020c1;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.btn-main:hover {
+.btn-main:hover, .btn-main:focus {
   color: #ffffff;
   text-shadow: 1px 1px 0 #000000;
 }
