@@ -56,8 +56,6 @@ function calculate(interest, amount, monthlyPayment) {
     interestpaid = 0;
   }
 
-  debugger;
-
   var priceData = {
     price: '£' + (interestpaid + amount).toFixed(2),
     interest: '£' + interestpaid.toFixed(2),
